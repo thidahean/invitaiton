@@ -1,0 +1,91 @@
+body{
+    margin:0;
+    background:#f7f6f5;
+    font-family:"Khmer OS Muol";
+    text-align:center;
+}
+
+.cover{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    /* background:linear-gradient(#fff,#f3e7c3); */
+    background: url(images/download\ \(10\).jpg);
+    /* background-repeat: no-repeat; */
+}
+
+.cover h1{
+    font-size:45px;
+    color:#b8860b;
+}
+
+.cover h2{
+    color:#8b6508;
+}
+
+button{
+    padding:15px 35px;
+    font-size:20px;
+    background:gold;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.content{
+    display:none;
+    animation: openBook 1.5s ease;
+}
+
+@keyframes openBook{
+    from{
+        transform:scale(0.8);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+.content img{
+    width:90%;
+    margin-top:20px;
+    border-radius:15px;
+    box-shadow:0 0 20px gray;
+}
+
+.countdown{
+    margin:50px;
+    font-size:30px;
+    color:brown;
+}
+
+@keyframes fade{
+    from{
+    opacity:0;
+    transform:translateY(50px);
+    }
+    to{
+    opacity:1;
+    transform:translateY(0);
+    }
+}
+@media(max-width:768px){
+
+.cover h1{
+    font-size:30px;
+}
+
+.cover h2{
+    font-size:20px;
+}
+
+button{
+    font-size:18px;
+}
+
+}
